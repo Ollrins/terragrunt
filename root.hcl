@@ -3,10 +3,10 @@
 # ==========================================
 
 locals {
-  cloud_id  = get_env("YC_CLOUD_ID", "default-cloud-id")
-  folder_id = get_env("YC_FOLDER_ID", "default-folder-id")
+  cloud_id  = get_env("YC_CLOUD_ID", "b1....")
+  folder_id = get_env("YC_FOLDER_ID", "b1....")
   zone      = get_env("YC_ZONE", "ru-central1-d")
-  root_dir  = get_terragrunt_dir()
+  root_dir  = "/home/Ollrins"
 }
 
 # ---------- Remote state (S3) ----------
